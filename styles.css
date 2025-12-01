@@ -1,1 +1,64 @@
 /*  your css code here. If applicable */
+body {
+font-family: Arial, sans-serif;
+background: #f2f2f2;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+
+.container {
+background: white;
+padding: 20px;
+width: 400px;
+border-radius: 15px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+
+h2 {
+margin-bottom: 20px;
+}
+
+
+#buttons {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+
+.btn, .stop {
+padding: 12px;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.2s ease;
+}
+
+
+.btn {
+background: #4CAF50;
+color: white;
+}
+
+
+.btn:hover {
+background: #45a049;
+}
+
+
+.stop {
+background: #ff4d4d;
+color: white;
+}
+
+
+.stop:hover {
+background: #e60000;
+}
