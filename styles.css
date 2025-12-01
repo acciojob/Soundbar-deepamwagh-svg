@@ -1,64 +1,64 @@
-/*  your css code here. If applicable */
-body {
-font-family: Arial, sans-serif;
-background: #f2f2f2;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
+:root{
+}
+.wrap{
+width:100%;
+padding:60px 40px;
+}
+
+#buttons{
+display:flex;
+gap:40px;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+max-width:1400px;
+margin:0 auto;
 }
 
 
-.container {
-background: white;
-padding: 20px;
-width: 400px;
-border-radius: 15px;
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-text-align: center;
+.btn, .stop{
+appearance:none;
+-webkit-appearance:none;
+border:0;
+background:var(--plate);
+color:var(--text);
+padding:26px 56px;
+border-radius:8px;
+font-size:20px;
+letter-spacing:0.6px;
+cursor:pointer;
+min-width:160px;
+text-align:center;
+box-shadow:0 6px 0 rgba(0,0,0,0.06), inset 0 -6px 0 rgba(0,0,0,0.06);
+transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+}
+
+.btn:hover{
+	transform:translateY(-4px); 
+	background:var(--plate-deep)
+}
+.btn:active{
+	transform:translateY(0)
 }
 
 
-h2 {
-margin-bottom: 20px;
+.stop{
+background:var(--plate);
 }
 
-
-#buttons {
-display: flex;
-flex-direction: column;
-gap: 10px;
+.stop:hover{
+	transform:translateY(-4px); 
+	background:var(--plate-deep)
 }
 
-
-.btn, .stop {
-padding: 12px;
-font-size: 16px;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-transition: 0.2s ease;
+@media(min-width:1200px){
+.wrap{
+	padding:120px 60px
 }
-
-
-.btn {
-background: #4CAF50;
-color: white;
+.btn, .stop{
+	padding:28px 68px; 
+	font-size:22px; 
+	min-width:200px
 }
-
-
-.btn:hover {
-background: #45a049;
-}
-
-
-.stop {
-background: #ff4d4d;
-color: white;
-}
-
-
-.stop:hover {
-background: #e60000;
+#buttons{gap:60px}
 }
